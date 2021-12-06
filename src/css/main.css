@@ -1,0 +1,121 @@
+.container {
+  width: 100px !important;
+  height: 130px !important;
+  position: relative !important;
+  display: block !important;
+  -webkit-perspective: 800px !important;
+  -moz-perspective: 800px !important;
+  -o-perspective: 800px !important;
+  perspective: 800px !important;
+  float: left !important;
+  margin: 10px !important;
+  padding: 0px !important;
+  background-color: transparent !important;
+  border-width: 0px !important;
+  border-top-width: opx !important;
+  border-bottom-width: opx !important;
+  border-image-width: 0px !important;
+  border: 0px;
+}
+.card {
+  border-image-width: 0px !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-width: 0px !important;
+  border-top-width: opx !important;
+  border-bottom-width: opx !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+  background-color: transparent !important;
+  position: absolute !important;
+  -webkit-transition: -webkit-transform 1s !important;
+  -moz-transition: -moz-transform 1s !important;
+  -o-transition: -o-transform 1s !important;
+  transition: transform 1s !important;
+  -webkit-transform-style: preserve-3d !important;
+  -moz-transform-style: preserve-3d !important;
+  -o-transform-style: preserve-3d !important;
+  transform-style: preserve-3d !important;
+  -webkit-transform-origin: 50% 50% !important;
+}
+.card div {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+
+  position: absolute !important;
+  -webkit-backface-visibility: hidden !important;
+  -moz-backface-visibility: hidden !important;
+  -o-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
+}
+.card .front {
+}
+.card .back {
+  -webkit-transform: rotateY(180deg) !important;
+  -moz-transform: rotateY(180deg) !important;
+  -o-transform: rotateY(180deg) !important;
+  transform: rotateY(180deg) !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-width: 0px !important;
+  border-top-width: opx !important;
+  border-bottom-width: opx !important;
+  margin: 0px !important;
+  border-image-width: 0px !important;
+}
+.card.flipped {
+  -webkit-transform: rotateY(180deg) !important;
+  -moz-transform: rotateY(180deg) !important;
+  -o-transform: rotateY(180deg) !important;
+  transform: rotateY(180deg) !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-width: 0px !important;
+  border-top-width: opx !important;
+  border-bottom-width: opx !important;
+  margin: 0px !important;
+  border-image-width: 0px !important;
+}
+
+.fade-out {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  transition: visibility 0s linear 5000ms, opacity 5000ms !important;
+}
+.cleanImage {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  border: 0px !important;
+  border-image-width: 0px !important;
+  border-style: none !important;
+  background-color: transparent !important;
+}
+
+.sideBar {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  border: 0px !important;
+}
+
+.mainScreen {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  border: 0px !important;
+  align-content: left;
+}
+
+.blink_me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
